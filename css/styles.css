@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'tt_normsmedium';
+    src: url('../fonts/tt-norms-medium-webfont.woff2') format('woff2'),
+    url('../fonts/tt-norms-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normsregular';
+    src: url('../fonts/tt-norms-regular-webfont.woff2') format('woff2'),
+    url('../fonts/tt-norms-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'tt_normsbold';
+    src: url('../fonts/tt-norms-bold-webfont.woff2') format('woff2'),
+    url('../fonts/tt-norms-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@keyframes neon-glow {
+
+    0% {
+        box-shadow: 0 0 15px rgba(255, 80, 247, .5);
+        background-color: rgb(194, 67, 186);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 80, 247, 1);
+        background-color: rgba(255, 80, 247, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 15px rgba(255, 80, 247, .5);
+        background-color: rgb(194, 67, 186);
+    }
+
+}
+
+@keyframes card-fade-in {
+
+    0% {
+        /*padding-top: 50px;*/
+        opacity: 0;
+    }
+
+    100% {
+        /*padding-top: 0px;*/
+        opacity: 1;
+    }
+
+}
+
+body {
+    background: rgb(33, 33, 33);
+    color: #FFFFFF;
+    font-family: 'tt_normsregular';
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a4a4a4;
+    text-decoration: none;
+}
+
+.navigation {
+    font-size: 1.8em;
+    padding-left: .5em;
+    padding-top: 6em;
+    height: 200vh;
+    background: rgb(33, 33, 33);
+    width: 8em;
+    border-right: solid #FFFFFF .2em;
+}
+
+.navigation > ul > li {
+    margin-bottom: 2em;
+}
+
+.card {
+    width: auto;
+    height: 100vh;
+    margin-left: 14em;
+}
+
+.card-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5em;
+}
+
+.card-content > h1 {
+    font-size: 4em;
+    margin-left: -.09em;
+    font-family: 'tt_normsbold';
+}
+
+.card-content > h2 {
+    font-size: 2em;
+}
+
+.clear-float {
+    clear: both;
+}
+
+#welcome-card-gradient {
+    /*background-image : linear-gradient(180deg, rgba(33, 33, 94, 1) 0%, rgba(33, 24, 53, 1) 100%),url("../images/daftpunk-hero.jpg");*/
+    /*background-image: linear-gradient(180deg, rgba(33, 33, 94, 1) 0%, rgba(33, 24, 53, 1) 50.91%, rgba(34, 24, 55, 1) 70.2%, rgba(39, 23, 62, 1) 77.15%, rgba(48, 21, 73, 1) 82.1%, rgba(61, 18, 90, 1) 86.1%, rgba(77, 15, 112, 1) 89.54%, rgba(98, 11, 140, 1) 92.57%, rgba(122, 6, 171, 1) 95.28%, rgba(149, 1, 208, 1) 97.73%, rgba(152, 0, 212, 1) 97.99%);*/
+    background-blend-mode: multiply;
+    background-size: cover;
+    /*border-style : Solid;*/
+    /*border-color : #FFFFFF;*/
+    /*border-color : rgba(255, 255, 255, 1);*/
+    /*border-width : 3px;*/
+    /*border-radius : 30px;*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21215E',endColorstr='#211835' , GradientType=0);*/
+    width: 100%;
+    height: 100vh;
+    opacity: .8;
+    z-index: -1;
+    position: absolute;
+}
+
+#disco-card {
+    background: linear-gradient(180deg, rgba(152, 0, 212, 1) 0%, rgba(191, 74, 0, 1) 80.45%, rgba(191, 90, 7, 1) 83.34%, rgba(192, 131, 25, 1) 88.98%, rgba(194, 198, 55, 1) 96.75%, rgba(194, 208, 59, 1) 97.87%);
+}
+
+#disco-1 {
+    background-image: url("../images/disco1.jpg");
+    background-size: contain;
+}
+
+#disco-2 {
+    background-image: url("../images/disco2.jpg");
+    background-size: contain;
+}
+
+#disco-3 {
+    background-image: url("../images/disco3.jpg");
+    background-size: contain;
+}
+
+#dance-1 {
+    background-image: url("../images/daftpunk.jpg");
+    background-size: contain;
+}
+
+#dance-2 {
+    background-image: url("../images/calvinharris.jpg");
+    background-size: contain;
+}
+
+#dance-3 {
+    background-image: url("../images/Justice.jpg");
+    background-size: contain;
+}
+
+#house-1 {
+    background-image: url("../images/davidguetta.jpg");
+    background-size: contain;
+}
+
+#house-2 {
+    background-image: url("../images/disclosure-caracal.jpg");
+    background-size: contain;
+}
+
+#house-3 {
+    background-image: url("../images/Justice.jpg");
+    background-size: contain;
+}
+
+#downtempo-1{
+    background-image: url("../images/downtempo1.jpg");
+    background-size: contain;
+}
+
+#downtempo-2 {
+    background-image: url("../images/downtempo2.jpg");
+    background-size: contain;
+}
+
+#downtempo-3 {
+    background-image: url("../images/downtempo3.jpg");
+    background-size: contain;
+}
+
+#dance-card {
+    background : linear-gradient(180deg, rgba(194, 208, 59, 1) 0%, rgba(183, 179, 62, 1) 19.37%, rgba(155, 106, 70, 1) 61.11%, rgba(142, 73, 74, 1) 78.84%, rgba(140, 79, 71, 1) 81.52%, rgba(133, 95, 62, 1) 85.01%, rgba(122, 122, 48, 1) 88.94%, rgba(107, 159, 28, 1) 93.2%, rgba(88, 207, 3, 1) 97.68%, rgba(86, 212, 0, 1) 98.11%);
+}
+
+#house-card {
+    background : linear-gradient(180deg, rgba(86, 212, 0, 1) 0%, rgba(0, 191, 156, 1) 79.63%, rgba(3, 165, 137, 1) 83.53%, rgba(10, 101, 89, 1) 91.78%, rgba(17, 32, 38, 1) 99.8%);
+}
+
+#downtempo-card {
+    background : linear-gradient(0deg, rgba(0, 51, 106, 1) 0%, rgba(17, 32, 38, 1) 100%);
+}
+.neon-line {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(194, 67, 186);
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255, 80, 247, .5);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    animation-name: neon-glow;
+    animation-duration: 45ms;
+    animation-iteration-count: infinite;
+    border-left:  8px solid #515151;
+    border-right:  8px solid #515151;
+
+}
+.album-art {
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 43px 0px rgba(0,0,0,0.38);
+}
+
+#intro {
+    /*padding-top: 200px;*/
+    /*animation-name: card-fade-in;*/
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    background-image: linear-gradient(180deg, rgba(33, 33, 94, 1) 0%, rgba(33, 24, 53, 1) 50.91%, rgba(34, 24, 55, 1) 70.2%, rgba(39, 23, 62, 1) 77.15%, rgba(48, 21, 73, 1) 82.1%, rgba(61, 18, 90, 1) 86.1%, rgba(77, 15, 112, 1) 89.54%, rgba(98, 11, 140, 1) 92.57%, rgba(122, 6, 171, 1) 95.28%, rgba(149, 1, 208, 1) 97.73%, rgba(152, 0, 212, 1) 97.99%);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 767px) {
+    .navigation {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2em;
+        padding-top: 0;
+    }
+    .navigation > ul {
+        /*display: none;*/
+    }
+    .card {
+        margin-left: 0;
+    }
+
+    .card-content {
+        padding-top: 10em;
+    }
+
+    .mobile-menu {
+        display: block;
+        padding-top: .5em;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #bgvid {
+        display: none;
+    }
+
+    .album-art{
+        width: 10em;
+        height: 10em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .mobile-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .mobile-menu {
+         display: none;
+     }
+
+    /*.loader {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #a4a4a4;
+        z-index: 100;
+    }*/
+
+    /*.loader-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }*/
+
+    video#bgvid {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background: url(polina.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .welcome-card-content {
+        z-index: 2;
+        position: relative;
+        padding-top: 20em;
+    }
+
+    .album-name {
+        width: 10em;
+        /*height: 2.5em;*/
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        color: #000000;
+        padding: .4em;
+        box-shadow: 0px 0px 43px 0px rgba(0,0,0,0.38);
+        margin-left: auto;
+        margin-right: auto;
+        transition: width 1s ease, height 1s ease, padding 1s ease ;
+    }
+
+    .album-name > h1 {
+        font-family: "tt_normsbold";
+        font-size: .7em;
+        padding-bottom: .2em;
+        transition: font-size 1s ;
+    }
+
+    .album-name > h2 {
+        font-size: .7em;
+        padding-bottom: .2em;
+        transition: font-size 1s ;
+    }
+
+    .section-header {
+        padding-bottom: 1em;
+    }
+    .listen-button {
+        width: auto;
+        padding: .5em 1em;
+        color: #000000;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        float: right;
+        margin-left: 1em;
+        margin-top: -2.2em;
+        opacity: 0;
+        transition: opacity .25s ease;
+        border: .1em solid #000000;
+        /*transition-delay: .25s;*/
+        cursor: pointer;
+    }
+
+    .album-info .preview-iframe {
+        margin-top: 1em;
+        opacity: 0;
+        transition: opacity .25s ease;
+    }
+
+    .album-info:hover .preview-iframe{
+        opacity: 1;
+        transition: opacity .5s ease;
+        transition-delay: .5s;
+    }
+    .album-art{
+        width: 10em;
+        height: 10em;
+        transition: width 1s ease, height 1s ease,margin-top 1s ease, margin-bottom 1s ease ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-info:hover > .album-art {
+        width: 15em;
+        height: 15em;
+        transition: width 1s ease, height 1s ease,margin-top 1s ease, margin-bottom 1s ease ;
+        margin-top: -2em;
+        margin-bottom: 2em;
+    }
+
+    .album-info:hover > .album-name {
+        width: 19em;
+        transition: width 1s ease, height 1s ease, padding 1s ease ;
+        padding: 1em;
+    }
+
+    .album-info:hover  .listen-button {
+        opacity: 1;
+        transition: opacity 1s ease ;
+        transition-delay: .5s;
+    }
+
+    .album-info:hover > .album-name > h1 {
+        font-size: 1em;
+        transition: font-size 1s ;
+    }
+
+    .album-info:hover > .album-name > h2 {
+        font-size: 1em;
+        transition: font-size 1s ;
+    }
+
+
+
+}

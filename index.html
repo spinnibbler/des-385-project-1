@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!--<div class="loader">
+    <div class="loader-content">
+    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+    </div>
+</div>-->
+<header>
+    <div class="navigation">
+        <div class="mobile-menu">
+            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">home</a></li>
+            <li><a href="#disco">disco</a></li>
+            <li><a href="#dance">dance</a></li>
+            <li><a href="#house">house</a></li>
+            <li><a href="#downtempo">downtempo</a></li>
+        </ul>
+    </div>
+</header>
+<div class="content">
+    <section id="intro">
+        <div class="card">
+            <div class="card-content welcome-card-content">
+            <h1>Electronic Music</h1>
+            <h2>an exploration</h2>
+                <div class="neon-line"></div>
+                <div class="neon-line"></div>
+                <div class="neon-line"></div>
+            </div>
+        </div>
+    </section>
+    <section id="disco">
+        <div class="card" id="disco-card">
+            <div class="card-content">
+                <h1 class="section-header">Disco</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="disco-1"></div>
+                            <div class="album-name">
+                                <h1>C'est Chic</h1>
+                                <h2>Chic</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('disco1')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="disco-2"></div>
+                            <div class="album-name">
+                                <h1>From Here to Eternity</h1>
+                                <h2>Giorgio Moroder</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('disco2')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="disco-3"></div>
+                            <div class="album-name">
+                                <h1>Bad Girls</h1>
+                                <h2>Donna Summer</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('disco3')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dance">
+        <div class="card" id="dance-card">
+            <div class="card-content">
+                <h1 class="section-header">Dance</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="dance-1"></div>
+                            <div class="album-name">
+                                <h1>Discovery</h1>
+                                <h2>Daft Punk</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('dance1')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="dance-2"></div>
+                            <div class="album-name">
+                                <h1>Funk Wav Bounces Vol. 1</h1>
+                                <h2>Calvin Harris</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('dance2')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="dance-3"></div>
+                            <div class="album-name">
+                                <h1>Cross</h1>
+                                <h2>Justice</h2>
+                                <a class="listen-button" onclick="sound.stop(); sound.play('dance3')">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="house">
+        <div class="card" id="house-card">
+            <div class="card-content">
+                <h1 class="section-header">House</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="house-1"></div>
+                            <div class="album-name">
+                                <h1>Nothing But the Beat</h1>
+                                <h2>David Guetta</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="house-2"></div>
+                            <div class="album-name">
+                                <h1>Caracal</h1>
+                                <h2>Disclosure</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="house-3"></div>
+                            <div class="album-name">
+                                <h1>Cross</h1>
+                                <h2>Justice</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="downtempo">
+        <div class="card" id="downtempo-card">
+            <div class="card-content">
+                <h1 class="section-header">Downtempo</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="downtempo-1"></div>
+                            <div class="album-name">
+                                <h1>Migration</h1>
+                                <h2>Bonobo</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="downtempo-2"></div>
+                            <div class="album-name">
+                                <h1>Thought So</h1>
+                                <h2>Nightmares on Wax</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="album-info">
+                            <div class="album-art" id="downtempo-3"></div>
+                            <div class="album-name">
+                                <h1>Epoch</h1>
+                                <h2>Tycho</h2>
+                                <a class="listen-button" href="#">Listen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/b9d26196ed.js"></script>
+<script src="js/howler.js"></script>
+
+<script>
+
+    var sound = new Howl({
+        src: ['audio/music-track.mp3'],
+        sprite: {
+            disco1: [0, 30000],
+            disco2: [35000, 65000],
+            disco3: [70000, 90000],
+            dance1: [105000, 135000],
+            dance2: [140000, 170000],
+            dance3: [190000, 200000],
+        }
+    });
+
+</script>
+
+</body>
+</html>
