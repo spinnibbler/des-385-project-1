@@ -240,13 +240,9 @@ a:hover {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
     .navigation {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 2em;
-        padding-top: 0;
+        display: none;
     }
     .navigation > ul {
         /*display: none;*/
@@ -256,7 +252,7 @@ a:hover {
     }
 
     .card-content {
-        padding-top: 10em;
+        padding-top: 5em;
     }
 
     .mobile-menu {
@@ -273,20 +269,98 @@ a:hover {
     }
 
     .album-art{
-        width: 10em;
-        height: 10em;
+        width: 15em;
+        height: 15em;
+    }
+
+    .listen-button {
+        width: auto;
+        padding: .5em 1em;
+        color: #000000;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        float: right;
+        margin-left: 1em;
+        margin-top: -2.2em;
+        opacity: 1;
+        transition: opacity .25s ease;
+        border: .1em solid #000000;
+        /*transition-delay: .25s;*/
+        cursor: pointer;
+    }
+
+    .album-name {
+        width: 19em;
+        /*height: 2.5em;*/
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        color: #000000;
+        padding: .6em;
+        box-shadow: 0px 0px 43px 0px rgba(0,0,0,0.38);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-art{
+        width: 15em;
+        height: 15em;
+        transition: width 1s ease, height 1s ease,margin-top 1s ease, margin-bottom 1s ease ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .album-info {
+        margin-bottom: 3em;
+    }
+
+    .album-info > .album-name > h1 {
+        font-size: 1em;
+        font-family: 'tt_normsbold';
+        padding-bottom: .2em;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+        /*margin-left: 14em;*/
+    }
+
+    .welcome-card-content {
+        z-index: 2;
+        position: relative;
+        padding-top: 10em;
+        height: 100vh;
+    }
+
+
+    .card-content > h1 {
+        font-size: 3em;
+        margin-left: -.09em;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .welcome-card-content > h1 {
+         text-align: left;
+     }
+
+    .welcome-card-content > h2 {
+        text-align: left;
+        font-size: 2em;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+
+@media screen and (min-width: 1024px){
 
     .mobile-menu {
         display: none;
     }
 
-}
+    .navigation {
+        display: block;
+    }
 
-@media screen and (min-width: 1024px){
 
     .navigation {
         position: fixed;
@@ -312,23 +386,6 @@ a:hover {
         width: 80%;
         text-align: center;
     }*/
-
-    video#bgvid {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
-        background: url(polina.jpg) no-repeat;
-        background-size: cover;
-    }
 
     .welcome-card-content {
         z-index: 2;
@@ -381,17 +438,6 @@ a:hover {
         cursor: pointer;
     }
 
-    .album-info .preview-iframe {
-        margin-top: 1em;
-        opacity: 0;
-        transition: opacity .25s ease;
-    }
-
-    .album-info:hover .preview-iframe{
-        opacity: 1;
-        transition: opacity .5s ease;
-        transition-delay: .5s;
-    }
     .album-art{
         width: 10em;
         height: 10em;
