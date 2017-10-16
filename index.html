@@ -153,9 +153,9 @@
                         <div class="album-info">
                             <div class="album-art" id="house-3"></div>
                             <div class="album-name">
-                                <h1>Cross</h1>
-                                <h2>Justice</h2>
-                                <a class="listen-button" onclick="queueAudio(); dance3.play()">Listen</a>
+                                <h1>Would You Ever</h1>
+                                <h2>Skrillex & Poo Bear</h2>
+                                <a class="listen-button" onclick="queueAudio(); house3.play()">Listen</a>
                             </div>
                         </div>
                     </div>
@@ -251,6 +251,11 @@
         volume: 0.7
     });
 
+    var house3 = new Howl({
+        src: ['audio/house-3.mp3'],
+        volume: 0.7
+    });
+
     var downtempo1 = new Howl({
         src: ['audio/downtempo-1.mp3'],
         volume: 0.7
@@ -279,6 +284,7 @@
 
         house1.stop();
         house2.stop();
+        house3.stop();
 
         downtempo1.stop();
         downtempo2.stop();
