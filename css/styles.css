@@ -268,10 +268,6 @@ a:hover {
         display: none;
     }
 
-    .album-art{
-        width: 15em;
-        height: 15em;
-    }
 
     .listen-button {
         width: auto;
@@ -302,15 +298,15 @@ a:hover {
     }
 
     .album-art{
-        width: 15em;
-        height: 15em;
         transition: width 1s ease, height 1s ease,margin-top 1s ease, margin-bottom 1s ease ;
         margin-left: auto;
         margin-right: auto;
+        width: 19em;
+        height: 19em;
     }
 
     .album-info {
-        margin-bottom: 3em;
+        margin-bottom: 4em;
     }
 
     .album-info > .album-name > h1 {
